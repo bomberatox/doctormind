@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Doctor Mind</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="icon" href="_images/doctor_mind_loguinho.png">
+  </head>
+  <script type="text/javascript">
+    function limpar(){
+     window.open("Teste.html", "_self");
+    }
+</script>
+
+  <body>
+    
+    <nav class="navbar navbar-toggleable-sm navbar-inverse" style="background: rgb(35, 138, 145);">
+        <div class="container">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="index.html"><img src="_images/home.png" style="width: 16px; height: 13px; padding-right: 4px;"><strong>Início</strong></a>
+              <a class="nav-item nav-link active" href="Teste.html"><img src="_images/test (1).png" style="width: 16px; height: 13px; padding-right: 4px;"><strong>Teste</strong></a>
+              <a class="nav-item nav-link" href="Transtornos.html"><img src="_images/brain (1).png" style="width: 16px; height: 13px; padding-right: 4px;"><strong>Transtornos</strong></a>
+              <a class="nav-item nav-link" href="about.html"><img src="_images/about.png" style="width: 16px; height: 13px; padding-right: 4px;"><strong>Sobre</strong></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container">
+
+        <br>
+    </br>
+    <div class="page-header pb-3 pt-4 text-center" style="color: rgb(85, 85, 85);">
+      <h1>Realize Seu Teste</h1>
+  </div>
+</br></br>
+ 
+    <div class="row">
+         <div class="col-sm-8">
+ 
+             <form class="pb-4 text-muted" method="POST" action="Data.php">
+                 <div class="form-group">
+                     <label for="nome">Nome</label>
+                     <input required="true" type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome completo">
+                 </div>
+
+                 <div class="form-group">
+                     <label for="email">E-mail</label>
+                     <input required="true" type="email" name="email" class="form-control" id="email" placeholder="Digite seu E-mail">
+                 </div>
+ 
+             <!-- 
+                 *P - paranoide
+                 *Ee - esquisoide
+                 *Ea - esquisotípico
+                 *A - antissocial
+                 *B - borderline
+                 *H - histrionico
+                 *N - narcisista
+                 *Eo - esquivo
+                 *D - dependente
+                 *O - Obsessivo compulsivo
+              -->
+              
+                 <div class="radio pb-1 text-left pb-2">
+                     <h5><b>Eu sinto desconfiança e suspeita persistentes sobre as outras pessoas.</b></h5>
+                     <label>
+                         <input required="true" type="radio" name="p1" value="1"> Concordo
+                     </label>
+                     <br>
+ 
+                     <label>
+                         <input required="true" type="radio" name="p1" value="0.5"> Concordo parcialmente
+                     </label>
+                     <br>
+ 
+                     <label>
+                         <input required="true" type="radio" name="p1" value="0.25"> Não sei
+                     </label>
+                     <br>
+ 
+                     <label>
+                         <input required="true" type="radio" name="p1" value="0.1"> Discordo parcialmente
+                     </label>
+                     <br>
+ 
+                     <label>
+                         <input required="true" type="radio" name="p1" value="0"> Discordo
+                     </label>
+                 </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu sinto que as outras pessoas estão me explorando, prejudicando ou me enganando.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="p2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Tenho dúvidas sobre a confiabilidade dos meus amigos e colegas de trabalho.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="p3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Tenho medo de confiar nos outros e usarem as informações contra mim.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="p4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu percebo significados ocultos nas situações do dia a dia, muitas vezes depreciadores e hostis.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="p5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu geralmente guardo rancores.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="p6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Tenho dúvidas constantes sobre a fidelidade do meu parceiro.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="p7" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p7" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p7" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p7" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="p7" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>No geral eu demonstro desinteresse por interações sociais.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ee1" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee1" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee1" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee1" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee1" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Não sinto nenhum desejo ou prazer com relações íntimas, incluindo com membros da família.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ee2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Prefiro atividades solitárias.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ee3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Tenho pouco interesse em experiências sexuais.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ee4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Não sinto prazer com quase nenhuma atividade.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ee5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Não tenho amigos próximos (exceto parentes de 1º grau).</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ee6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Sou indiferente quanto a críticas e elogios.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ee7" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee7" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee7" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee7" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee7" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Costumam me chamar de frio por causa do meu jeito de ser.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ee8" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee8" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee8" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee8" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ee8" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Algumas situações possuem um significado especial ou místico, muitas vezes direcionado para mim.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ea1" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea1" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea1" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea1" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea1" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu acredito em fenômenos paranormais e parapsicólogos como telepatia, clarividência ou sexto sentido.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ea2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>As vezes tenho experências perceptivas incomuns. Ex: uma voz sussurando meu nome.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ea3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Meus pensamentos e falas geralmente são vagos e metafóricos.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ea4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Geralmente não demonstro afeto.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ea5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Minha aparência e meu comportamento geralmente são vistos como excêntrico ou peculiar.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ea6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu possuo extrema ansiedade social que não diminui com a familiaridade.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="ea7" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea7" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea7" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea7" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="ea7" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Tenho dificuldades em me ajustar às normas sociais.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="a1" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a1" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a1" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a1" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a1" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Costumo enganar, mentir ou ludibriar os outros para ganhos pessoais.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="a2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Na maioria das vezes eu ajo compulsivamente e não planejo o futuro.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="a3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>É fácil me irritar, nessas situações geralmente fico agressivo e costumo sempre estar envolvido em brigas físicas.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="a4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu não me importo com a minha ou com a segurança dos outros.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="a5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>No geral eu sou irresponsável.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="a6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Não sinto remorso e sou indiferente a agressões alheias.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="a7" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a7" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a7" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a7" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="a7" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu me esforço para evitar um possível abandono.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="b1" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b1" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b1" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b1" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b1" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Meus relacionamentos e emoções geralmente são intensos e instáveis.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="b2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Minha percepcão sobre mim varia facilmente.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="b3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Possuo pelo menos dois comportamentos auto-destrutivos. (sexo sem proteção, compulsão alimentar, abuso de alcool e drogas).</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="b4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu ameaço ter ou tenho comportamentos suicidas e automutilantes.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="b5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu apresento rápidas alterações de humor.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="b6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu sinto um vazio persistente em minha vida.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="b7" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b7" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b7" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b7" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b7" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Quando fico irritado sinto uma raiva intensa difícil de ser controlada.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="b8" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b8" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b8" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b8" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="b8" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Gosto de ser o centro das atenções e sinto desconforto quando não sou.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="h1" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h1" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h1" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h1" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h1" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Meu comportamento é exageradamente sedutor e provocativo sexualmente.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="h2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Uso a minha aparência para chamar a atenção dos outros.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="h3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Meus discursos são grandiosos mas com poucos detalhes.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="h4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu demonstro minhas emoções com dramatização e teatralidade.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="h5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Sou facilmente sugestionável ou influenciável.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="h6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>As vezes descubro que eu acreditava ter uma relação mais íntima do que era de fato.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="h7" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h7" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h7" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h7" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="h7" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu sou uma pessoa grandiosa e preciso de admiração e reconhecimento.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="n1" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n1" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n1" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n1" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n1" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Tenho fantasias de sucesso ilimitado na vida profissional e amorosa.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="n2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Sou uma pessoa única e especial, e desejo me relacionar apenas com pessoas de alto nível.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="n3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Não vejo problema em passar por cima das outras pessoas se isso me ajudar a conquistar um objetivo pessoal.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="n4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu sinto inveja dos outros e outras pessoas me invejam.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="n5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>As vezes posso ser arrogante e insolente.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="n6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="n6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu evito atividades profissionais que envolvam contato interpessoal.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="eo1" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo1" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo1" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo1" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo1" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Não sinto vontade de me envolver com outras pessoas sem ter a certeza que serei bem recebido.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="eo2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>No geral eu sou mais reservado nos relacionamentos íntimos por temer o ridículo ou humilhação.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="eo3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu me preocupo com críticas e rejeições.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="eo4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Quando conheço gente nova me sinto inibido por me sentir inadequado.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="eo5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Sou socialmente incapaz, sem atrativos e inferior aos outros.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="eo6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Quase nunca assumo riscos ou me envolvo em atividades novas.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="eo7" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo7" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo7" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo7" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="eo7" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Sinto dificuldade de tomar decisões sem aconselhamento.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="d1" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d1" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d1" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d1" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d1" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu faço as outras pessoas serem responsáveis por aspectos importantes em minha vida.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="d2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Geralmente eu não discordo dos outros para não perder apoio ou aprovação.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="d3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Geralmente eu não inicio novos projetos por conta própria.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="d4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Para conseguir o apoio dos outros sou capaz de fazer tudo, até passar por situações desagradáveis.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="d5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Me sinto desconfortável quando estou sozinho por temer ser incapaz de cuidar de mim mesmo.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="d6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Quando termino um relacionamento urgentemente eu busco outro.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="d7" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d7" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d7" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d7" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="d7" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Tenho extrema necessidade de seguir horários, regras e organizações.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="o1" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o1" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o1" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o1" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o1" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Me esforço para deixar as coisas perfeitas, de maneira que me atrapalha na conclusão de tarefas.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="o2" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o2" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o2" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o2" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o2" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Eu prefiro o trabalho que o lazer.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="o3" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o3" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o3" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o3" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o3" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Sou inflexível em relação a ética, aos valores e a moral.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="o4" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o4" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o4" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o4" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o4" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Tenho dificuldade em descartar objetos usados, mesmo quando não servem mais.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="o5" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o5" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o5" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o5" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o5" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Não gosto de delegar tarefas ou trabalhar em equipe.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="o6" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o6" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o6" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o6" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o6" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>Devo economizar meu dinheiro para uma possível situação catastrófica no futuro.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="o7" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o7" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o7" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o7" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o7" value="0"> Discordo
+                    </label>
+                </div>
+                <div class="radio pb-1 text-left pb-2">
+                    <h5><b>No geral eu sou rígido e teimoso.</b></h5>
+                    <label>
+                        <input required="true" type="radio" name="o8" value="1"> Concordo
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o8" value="0.5"> Concordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o8" value="0.25"> Não sei
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o8" value="0.1"> Discordo parcialmente
+                    </label>
+                    <br>
+
+                    <label>
+                        <input required="true" type="radio" name="o8" value="0"> Discordo
+                    </label>
+                </div>
+                 <button type="button" class="btn btn-secondary" onclick="limpar()" style="background: rgb(35, 138, 145); color: #ffffff;">Limpar</button>
+                 
+                 <button type="submit" class="btn btn-secondary" style="background: rgb(35, 138, 145); color: #ffffff;">Enviar</button>
+            </form>
+
+         </div>
+    </div>
+     
+ </div>
+ 
+ </br></br></br></br>
+ <div class="container-fluid pt-2" style="background: rgb(35, 138, 145)";>
+     <div class="row justify-content-center">
+         <div class="col-md-3 text-center lead"><a href="Easter-egg.html" style="color: #ffffff; text-decoration: none;"><img src="_images/twitter-logo.png" style="width: 16px; height: 13px; padding-right: 4px;">Twitter</a></div>
+         <div class="col-md-3 text-center lead"><a href="Easter-egg.html" style="color: #ffffff; text-decoration: none;"><img src="_images/facebook-logo.png" style="width: 16px; height: 13px; padding-right: 4px;">Facebook</a></div>
+         <div class="col-md-3 text-center lead"><a href="Easter-egg.html" style="color: #ffffff; text-decoration: none;"><img src="_images/instagram-logo.png" style="width: 16px; height: 13px; padding-right: 4px;">Instagram</a></div>
+         <div class="col-md-3 text-center lead"><a href="Easter-egg.html" style="color: #ffffff; text-decoration: none;"><img src="_images/email.png" style="width: 16px; height: 13px; padding-right: 4px;">E-mail</a></div>
+         <div class="col-md-3 pt-4 text-center" style="color: #ffffff;">Copyright 2020 - site por <a href="Easter-egg.html" style="color: #ffffff; text-decoration: none;"><strong>Grupo ATC</strong></a></div>
+     </div>
+ </div>
+ 
+ 
+ <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ <script>
+ $(function(){ $('[data-toggle="tooltip"]').tooltip();})
+ </script>
+ </body>
+ </html>
