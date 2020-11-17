@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse justify-content-center" id="mainNav">
             <div class="navbar-nav">
               <a class="nav-item nav-link" href="index.html"><img src="_images/home.png" style="width: 16px; height: 13px; padding-right: 4px;"><strong>Início</strong></a>
-              <a class="nav-item nav-link" href="Teste.html"><img src="_images/test (1).png" style="width: 16px; height: 13px; padding-right: 4px;"><strong>Teste</strong></a>
+              <a class="nav-item nav-link" href="Teste0.html"><img src="_images/test (1).png" style="width: 16px; height: 13px; padding-right: 4px;"><strong>Teste</strong></a>
               <a class="nav-item nav-link" href="Transtornos.html"><img src="_images/brain (1).png" style="width: 16px; height: 13px; padding-right: 4px;"><strong>Transtornos</strong></a>
               <a class="nav-item nav-link" href="about.html"><img src="_images/about.png" style="width: 16px; height: 13px; padding-right: 4px;"><strong>Sobre</strong></a>
             </div>
@@ -46,8 +46,8 @@
         
 
             //status
-            echo "<br>nome: ".$_SESSION["nome"]."<br><br>"
-            ."Paranóide: ".number_format($_SESSION["pts_p"],2)
+            echo "<br><b><h4>Nome: ".$_SESSION["nome"]."</b></h4><br><br>"
+            ."<b><h5>Paranóide: ".number_format($_SESSION["pts_p"],2)
             ."%<br>\nEsquisóide: ".number_format($_SESSION["pts_ee"],2)
             ."%<br>\nEsquizotipico: ".number_format($_SESSION["pts_ea"],2)
             ."%<br>\nAntissocial: ".number_format($_SESSION["pts_a"],2)
@@ -56,17 +56,16 @@
             ."%<br>\nNarcisista: ".number_format($_SESSION["pts_n"],2)
             ."%<br>\nEsquivo: ".number_format($_SESSION["pts_eo"],2)
             ."%<br>\nDependente: ".number_format($_SESSION["pts_d"],2)
-            ."%<br>\nObsessivo-Compulsivo: ".number_format($_SESSION["pts_o"],2)."%<br><br><br>";
+            ."%<br>\nObsessivo-Compulsivo: ".number_format($_SESSION["pts_o"],2)."%</b></h5><br><br><br>";
 
             ?>
 
 
 <p class="text-justify">Para ver informações detalhadas sobre cada transtorno clique na ala "Transtornos" na barra de navegação.<br>
-    Caso deseje receber os resultados do seu teste por e-mail, basta clicar <a href='mail.php'>aqui</a>.<br>
-            ATENÇÃO! O teste não substitui a avaliação de um profissional, caso seja relevante procure auxílio especializado, saúde mental é uma questão muito importante!.<br><br></p>
-       
+<b>ATENÇÃO!</b> O teste não substitui a avaliação de um profissional, caso seja relevante procure auxílio especializado, saúde mental é uma questão muito importante!.<br><br></p>
+<div style="display: flex; justify-content: center;">
         <button type="button" class="btn btn-secondary" style="background: rgb(35, 138, 145); color: #ffffff;" onclick="history.back()">Retornar</button>
-         </form>
+  </div></form>
 
 
          

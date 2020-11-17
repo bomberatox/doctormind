@@ -10,6 +10,8 @@
   </head>
 
   <?php
+
+$mails;
 // Multiple recipients
 $to = $_SESSION["email"]; // note the comma
 
@@ -29,17 +31,17 @@ $message = '
 </div>
 <div class="row">
     <form>'.
-    "<br>nome: ".$_SESSION["nome"]."<br><br>"
-        ."Paranóide: ".number_format($_SESSION["pts_p"],2)
-        ."%<br>\nEsquisóide: ".number_format($_SESSION["pts_ee"],2)
-        ."%<br>\nEsquizotipico: ".number_format($_SESSION["pts_ea"],2)
-        ."%<br>\nAntissocial: ".number_format($_SESSION["pts_a"],2)
-        ."%<br>\nBorderline: ".number_format($_SESSION["pts_b"],2)
-        ."%<br>\nHistrionico: ".number_format($_SESSION["pts_h"],2)
-        ."%<br>\nNarcisista: ".number_format($_SESSION["pts_n"],2)
-        ."%<br>\nEsquivo: ".number_format($_SESSION["pts_eo"],2)
-        ."%<br>\nDependente: ".number_format($_SESSION["pts_d"],2)
-        ."%<br>\nObsessivo-Compulsivo: ".number_format($_SESSION["pts_o"],2)."%<br><br><br><br>"
+    "<br><b><h4>Nome: ".$_SESSION["nome"]."</b></h4><br><br>"
+    ."<b><h5>Paranóide: ".number_format($_SESSION["pts_p"],2)
+    ."%<br>\nEsquisóide: ".number_format($_SESSION["pts_ee"],2)
+    ."%<br>\nEsquizotipico: ".number_format($_SESSION["pts_ea"],2)
+    ."%<br>\nAntissocial: ".number_format($_SESSION["pts_a"],2)
+    ."%<br>\nBorderline: ".number_format($_SESSION["pts_b"],2)
+    ."%<br>\nHistrionico: ".number_format($_SESSION["pts_h"],2)
+    ."%<br>\nNarcisista: ".number_format($_SESSION["pts_n"],2)
+    ."%<br>\nEsquivo: ".number_format($_SESSION["pts_eo"],2)
+    ."%<br>\nDependente: ".number_format($_SESSION["pts_d"],2)
+    ."%<br>\nObsessivo-Compulsivo: ".number_format($_SESSION["pts_o"],2)."%</b></h5><br><br><br>"
 
         .'
      </form>
@@ -57,7 +59,10 @@ $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 // Additional headers
 $headers[] = 'To:'.$_SESSION["email"];
 
-// Mail it
-mail($to, $subject, $message, implode("\r\n", $headers));
+if ($_SESSION["email"] == "" OR $mails == 1){}
+else{mail($to, $subject, $message, implode("\r\n", $headers));
+  $mails=1;
+  $_SESSION['mails'] = $mails;
+}
 ?>
             <script type="text/javascript">location.href = 'Resultado.php';</script>
